@@ -1,331 +1,1226 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
+  <!-- ═══════════════════════════════════════════════════════════════
+       Arturo Juárez — Estilista | El Arte del Estilo
+       Premium barbershop & styling experience in Acapulco & CDMX
+       ═══════════════════════════════════════════════════════════════ -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arturo Juárez — Estilista | El Arte del Estilo</title>
-  <meta name="description" content="Barbería premium en Acapulco y CDMX. Cortes clásicos, afeitados con navaja, y el arte del estilo masculino. Agenda tu cita hoy.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>Arturo Juárez — Estilista | El Arte del Estilo | Acapulco &amp; CDMX</title>
+  <meta name="description" content="Arturo Juárez Estilista — Donde el estilo se convierte en arte. Barbería y estilismo premium en Acapulco y Ciudad de México. Cortes, barbas, color y tratamientos capilares de primer nivel.">
+  <meta name="keywords" content="barbería premium, estilista, Acapulco, CDMX, Polanco, corte de cabello, diseño de barba, Arturo Juárez, barbershop, grooming">
+  <meta name="author" content="Arturo Juárez Estilista">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://arturojuarez.com">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arturojuarez.com">
+  <meta property="og:title" content="Arturo Juárez — Estilista | El Arte del Estilo">
+  <meta property="og:description" content="Donde el estilo se convierte en arte. Barbería y estilismo premium en Acapulco y CDMX.">
+  <meta property="og:image" content="https://arturojuarez.com/assets/og-image.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Arturo Juárez Estilista">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://arturojuarez.com">
+  <meta name="twitter:title" content="Arturo Juárez — Estilista | El Arte del Estilo">
+  <meta name="twitter:description" content="Donde el estilo se convierte en arte. Barbería premium en Acapulco y CDMX.">
+  <meta name="twitter:image" content="https://arturojuarez.com/assets/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "Arturo Juárez — Estilista",
+    "description": "Barbería y estilismo premium en Acapulco y Ciudad de México",
+    "url": "https://arturojuarez.com",
+    "telephone": ["+52-744-123-4567", "+52-55-1234-5678"],
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Costera Miguel Alemán 123",
+        "addressLocality": "Acapulco",
+        "addressRegion": "Guerrero",
+        "postalCode": "39850",
+        "addressCountry": "MX"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Presidente Masaryk 456",
+        "addressLocality": "Ciudad de México",
+        "addressRegion": "CDMX",
+        "postalCode": "11560",
+        "addressCountry": "MX"
+      }
+    ],
+    "priceRange": "$$$",
+    "award": ["Mejor Barbería — GQ México", "Excelencia en Estilo — Vogue Hombres"]
+  }
+  </script>
 </head>
+
 <body>
+  <!-- ═══════════════════════════════════════════════════════════════
+       PRELOADER
+       ═══════════════════════════════════════════════════════════════ -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__scissors">✂</div>
+      <div class="preloader__text">Arturo Juárez</div>
+      <div class="preloader__bar">
+        <div class="preloader__bar-fill"></div>
+      </div>
+    </div>
+  </div>
 
-  <!-- ====== NAVIGATION ====== -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo">ARTURO JUÁREZ <span>— Estilista</span></a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" class="active">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#equipo">Equipo</a></li>
-        <li><a href="sucursales.html">Sucursales</a></li>
-        <li><a href="calendario.html" class="nav-cta">Agendar Cita</a></li>
-      </ul>
-      <button class="menu-toggle" id="menuToggle" aria-label="Menú">
-        <span></span>
-        <span></span>
-        <span></span>
+  <!-- ═══════════════════════════════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════════════════════════════ -->
+  <header class="nav" id="nav" role="banner">
+    <div class="nav__container">
+      <!-- Hamburger -->
+      <button class="nav__hamburger" id="navHamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
       </button>
-    </div>
-  </nav>
 
-  <!-- ====== HERO ====== -->
-  <section class="hero">
-    <div class="hero-bg">
-      <div class="hero-pattern"></div>
-    </div>
-    <div class="hero-content">
-      <span class="hero-badge">✦ Acapulco · CDMX ✦</span>
-      <h1 class="hero-title">Arturo Juárez</h1>
-      <p class="hero-tagline">Donde el Estilo se Convierte en Arte</p>
-      <p class="hero-desc">Más de 15 años perfeccionando el arte del corte masculino. Tradición, precisión y un estilo que habla por sí solo.</p>
-      <div class="hero-buttons">
-        <a href="calendario.html" class="btn btn-primary">Agendar Cita</a>
-        <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
+      <!-- Logo -->
+      <a href="#hero" class="nav__logo" aria-label="Inicio">
+        <span class="nav__logo-mark">AJ</span>
+        <span class="nav__logo-text">Arturo Juárez</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="nav__links" id="navLinks" role="navigation" aria-label="Menú principal">
+        <a href="#servicios" class="nav__link">Servicios</a>
+        <a href="#nosotros" class="nav__link">Nosotros</a>
+        <a href="#equipo" class="nav__link">Equipo</a>
+        <a href="#galeria" class="nav__link">Galería</a>
+        <a href="#productos" class="nav__link">Productos</a>
+        <a href="#ubicaciones" class="nav__link">Ubicaciones</a>
+      </nav>
+
+      <!-- CTA + Theme Toggle -->
+      <div class="nav__actions">
+        <button class="nav__theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <svg class="nav__theme-icon nav__theme-icon--sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="nav__theme-icon nav__theme-icon--moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#reservar" class="nav__cta">Reservar Cita</a>
       </div>
     </div>
-    <div class="hero-scroll">
-      <span></span>
-      <small>Descubre</small>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="nav__mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="nav__mobile-menu-inner">
+        <a href="#servicios" class="nav__mobile-link" data-index="01">Servicios</a>
+        <a href="#nosotros" class="nav__mobile-link" data-index="02">Nosotros</a>
+        <a href="#equipo" class="nav__mobile-link" data-index="03">Equipo</a>
+        <a href="#galeria" class="nav__mobile-link" data-index="04">Galería</a>
+        <a href="#productos" class="nav__mobile-link" data-index="05">Productos</a>
+        <a href="#ubicaciones" class="nav__mobile-link" data-index="06">Ubicaciones</a>
+        <a href="#reservar" class="nav__mobile-link nav__mobile-link--cta" data-index="07">Reservar Cita</a>
+        <div class="nav__mobile-footer">
+          <p class="nav__mobile-tagline">El Arte del Estilo</p>
+          <div class="nav__mobile-social">
+            <a href="https://instagram.com/arturojuarezestilista" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://facebook.com/arturojuarezestilista" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://tiktok.com/@arturojuarezestilista" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.57 6.33 6.33 0 0 0 9.37 22a6.33 6.33 0 0 0 6.38-6.22V9.4a8.16 8.16 0 0 0 4.84 1.58V7.55a4.78 4.78 0 0 1-1-.86z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HERO SECTION — Full-Screen Video
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Video Background -->
+    <div class="hero__video-container">
+      <video
+        class="hero__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080'%3E%3Crect fill='%231a2a42'/%3E%3C/svg%3E"
+      >
+        <!-- Replace with actual video files -->
+        <source src="assets/hero-video.mp4" type="video/mp4">
+        <source src="assets/hero-video.webm" type="video/webm">
+      </video>
+      <div class="hero__video-overlay"></div>
+      <!-- Animated grain texture -->
+      <div class="hero__grain"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero__content">
+      <div class="hero__badge reveal" data-delay="0">
+        <span class="hero__badge-line"></span>
+        <span class="hero__badge-text">Est. 2018 — Acapulco &amp; CDMX</span>
+        <span class="hero__badge-line"></span>
+      </div>
+
+      <h1 class="hero__title reveal" data-delay="200">
+        <span class="hero__title-line">Arturo</span>
+        <span class="hero__title-line hero__title-line--accent">Juárez</span>
+      </h1>
+
+      <p class="hero__subtitle reveal" data-delay="400">— Estilista —</p>
+
+      <p class="hero__tagline reveal" data-delay="600">
+        Donde el Estilo se Convierte en Arte
+      </p>
+
+      <div class="hero__ctas reveal" data-delay="800">
+        <a href="#reservar" class="btn btn--primary btn--lg">
+          <span>Reservar Cita</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#servicios" class="btn btn--outline btn--lg">
+          <span>Ver Servicios</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll reveal" data-delay="1200">
+      <span class="hero__scroll-text">Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+
+    <!-- Side social links -->
+    <div class="hero__social">
+      <a href="https://instagram.com/arturojuarezestilista" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+      <a href="https://facebook.com/arturojuarezestilista" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+      <a href="https://tiktok.com/@arturojuarezestilista" target="_blank" rel="noopener" aria-label="TikTok">TK</a>
+      <div class="hero__social-line"></div>
     </div>
   </section>
 
-  <!-- ====== INTRO ====== -->
-  <section class="intro section-padding">
-    <div class="container text-center">
-      <div class="divider">
-        <span class="divider-icon">◆ ✂ ◆</span>
+  <!-- ═══════════════════════════════════════════════════════════════
+       AWARDS MARQUEE
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="marquee" aria-label="Reconocimientos">
+    <div class="marquee__track">
+      <div class="marquee__content">
+        <span class="marquee__item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          Mejor Barbería — GQ México 2024
+        </span>
+        <span class="marquee__separator">✦</span>
+        <span class="marquee__item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          Excelencia en Estilo — Vogue Hombres 2023
+        </span>
+        <span class="marquee__separator">✦</span>
+        <span class="marquee__item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          Top 10 Barberías de México — Esquire
+        </span>
+        <span class="marquee__separator">✦</span>
+        <span class="marquee__item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          Mejor Barbería — GQ México 2024
+        </span>
+        <span class="marquee__separator">✦</span>
+        <span class="marquee__item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          Excelencia en Estilo — Vogue Hombres 2023
+        </span>
+        <span class="marquee__separator">✦</span>
+        <span class="marquee__item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          Top 10 Barberías de México — Esquire
+        </span>
+        <span class="marquee__separator">✦</span>
       </div>
-      <div class="intro-content reveal">
-        <h2 class="section-title">Bienvenido</h2>
-        <p class="section-subtitle">Una experiencia que trasciende el corte</p>
-        <p>
-          En Arturo Juárez no solo cortamos cabello — creamos una experiencia. Desde el momento en que cruzas la puerta, 
-          el aroma del sándalo y la toalla caliente te transportan a otra época. Una época donde cada detalle importaba, 
-          donde el barbero era un artesano y cada corte era una obra maestra.
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       ABOUT / NOSOTROS
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="about" id="nosotros">
+    <div class="container">
+      <div class="about__grid">
+        <!-- Left: Image Composition -->
+        <div class="about__images reveal-left">
+          <div class="about__image-main">
+            <div class="about__image-placeholder" data-label="Interior del estudio">
+              <div class="placeholder-img placeholder-img--warm">
+                <span>Interior</span>
+              </div>
+            </div>
+          </div>
+          <div class="about__image-secondary">
+            <div class="about__image-placeholder" data-label="Detalle de corte">
+              <div class="placeholder-img placeholder-img--dark">
+                <span>Detalle</span>
+              </div>
+            </div>
+          </div>
+          <div class="about__image-accent">
+            <div class="about__stats-card">
+              <div class="about__stat">
+                <span class="about__stat-number" data-count="8">0</span>
+                <span class="about__stat-label">Años de<br>Experiencia</span>
+              </div>
+              <div class="about__stat-divider"></div>
+              <div class="about__stat">
+                <span class="about__stat-number" data-count="15000">0</span>
+                <span class="about__stat-suffix">+</span>
+                <span class="about__stat-label">Clientes<br>Satisfechos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Text Content -->
+        <div class="about__content">
+          <div class="section-label reveal">
+            <span class="section-label__number">01</span>
+            <span class="section-label__line"></span>
+            <span class="section-label__text">Nosotros</span>
+          </div>
+
+          <h2 class="about__title reveal">
+            No es Solo un Corte.<br>
+            <em>Es una Experiencia.</em>
+          </h2>
+
+          <p class="about__lead reveal">
+            Arturo Juárez Estilista nació de una convicción simple: cada persona merece
+            sentirse extraordinaria al salir de la silla del barbero.
+          </p>
+
+          <p class="about__text reveal">
+            Desde nuestro primer estudio en Acapulco hasta nuestra nueva sede en el
+            corazón de Polanco, hemos perfeccionado el arte de la barbería
+            contemporánea. Combinamos técnicas clásicas con tendencias de vanguardia,
+            productos premium y una atención al detalle que raya en lo obsesivo.
+          </p>
+
+          <p class="about__text reveal">
+            Nuestro espacio es tu refugio. Aquí no hay prisas, no hay ruido. Solo
+            manos expertas, conversación auténtica y el aroma inconfundible de una
+            barbería que toma en serio su oficio.
+          </p>
+
+          <div class="about__values reveal">
+            <div class="about__value">
+              <div class="about__value-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <h3 class="about__value-title">Precisión</h3>
+                <p class="about__value-text">Cada corte es medido, cada línea es intencional.</p>
+              </div>
+            </div>
+            <div class="about__value">
+              <div class="about__value-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <div>
+                <h3 class="about__value-title">Pasión</h3>
+                <p class="about__value-text">Amamos lo que hacemos. Se nota.</p>
+              </div>
+            </div>
+            <div class="about__value">
+              <div class="about__value-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div>
+                <h3 class="about__value-title">Excelencia</h3>
+                <p class="about__value-text">Lo bueno no es suficiente. Buscamos lo excepcional.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SERVICES / SERVICIOS
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="services__header">
+        <div class="section-label reveal">
+          <span class="section-label__number">02</span>
+          <span class="section-label__line"></span>
+          <span class="section-label__text">Servicios</span>
+        </div>
+        <h2 class="services__title reveal">
+          Nuestro Menú<br><em>de Servicios</em>
+        </h2>
+        <p class="services__intro reveal">
+          Cada servicio incluye consulta personalizada, bebida de cortesía y
+          productos premium aplicados con técnica experta.
         </p>
-        <br>
-        <p>
-          Con sucursales en el corazón de Acapulco y la Ciudad de México, llevamos la tradición de la barbería clásica 
-          al hombre moderno. Sin prisas. Sin compromisos. Solo excelencia.
+      </div>
+
+      <div class="services__grid">
+        <!-- Service 1 -->
+        <article class="service-card reveal" data-delay="0">
+          <div class="service-card__number">01</div>
+          <div class="service-card__content">
+            <div class="service-card__header">
+              <h3 class="service-card__name">Corte Clásico</h3>
+              <div class="service-card__price-line"></div>
+              <span class="service-card__price">$450</span>
+            </div>
+            <p class="service-card__desc">El corte de toda la vida, elevado a una experiencia premium.</p>
+            <div class="service-card__details">
+              <span class="service-card__duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                45 min
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="service-card reveal" data-delay="100">
+          <div class="service-card__number">02</div>
+          <div class="service-card__content">
+            <div class="service-card__header">
+              <h3 class="service-card__name">Corte + Barba</h3>
+              <div class="service-card__price-line"></div>
+              <span class="service-card__price">$650</span>
+            </div>
+            <p class="service-card__desc">El combo perfecto para el caballero moderno.</p>
+            <div class="service-card__details">
+              <span class="service-card__duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                75 min
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="service-card reveal" data-delay="200">
+          <div class="service-card__number">03</div>
+          <div class="service-card__content">
+            <div class="service-card__header">
+              <h3 class="service-card__name">Afeitado con Navaja</h3>
+              <div class="service-card__price-line"></div>
+              <span class="service-card__price">$500</span>
+            </div>
+            <p class="service-card__desc">Como lo hacía tu abuelo, pero con estilo contemporáneo.</p>
+            <div class="service-card__details">
+              <span class="service-card__duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                40 min
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="service-card reveal" data-delay="300">
+          <div class="service-card__number">04</div>
+          <div class="service-card__content">
+            <div class="service-card__header">
+              <h3 class="service-card__name">Diseño de Barba</h3>
+              <div class="service-card__price-line"></div>
+              <span class="service-card__price">$350</span>
+            </div>
+            <p class="service-card__desc">Esculpimos tu barba como una obra de arte.</p>
+            <div class="service-card__details">
+              <span class="service-card__duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                30 min
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 5 -->
+        <article class="service-card reveal" data-delay="0">
+          <div class="service-card__number">05</div>
+          <div class="service-card__content">
+            <div class="service-card__header">
+              <h3 class="service-card__name">Tratamiento Capilar</h3>
+              <div class="service-card__price-line"></div>
+              <span class="service-card__price">$800</span>
+            </div>
+            <p class="service-card__desc">Nutrición profunda para el cabello que lo merece.</p>
+            <div class="service-card__details">
+              <span class="service-card__duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                60 min
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 6 -->
+        <article class="service-card reveal" data-delay="100">
+          <div class="service-card__number">06</div>
+          <div class="service-card__content">
+            <div class="service-card__header">
+              <h3 class="service-card__name">Corte Infantil</h3>
+              <div class="service-card__price-line"></div>
+              <span class="service-card__price">$300</span>
+            </div>
+            <p class="service-card__desc">Los pequeños caballeros también merecen estilo.</p>
+            <div class="service-card__details">
+              <span class="service-card__duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                30 min
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 7 -->
+        <article class="service-card reveal" data-delay="200">
+          <div class="service-card__number">07</div>
+          <div class="service-card__content">
+            <div class="service-card__header">
+              <h3 class="service-card__name">Color / Mechas</h3>
+              <div class="service-card__price-line"></div>
+              <span class="service-card__price">$1,200</span>
+            </div>
+            <p class="service-card__desc">Un cambio sutil que hace toda la diferencia.</p>
+            <div class="service-card__details">
+              <span class="service-card__duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                90 min
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 8 -->
+        <article class="service-card reveal" data-delay="300">
+          <div class="service-card__number">08</div>
+          <div class="service-card__content">
+            <div class="service-card__header">
+              <h3 class="service-card__name">Alisado Progresivo</h3>
+              <div class="service-card__price-line"></div>
+              <span class="service-card__price">$1,500</span>
+            </div>
+            <p class="service-card__desc">Domina tus ondas con tecnología de punta.</p>
+            <div class="service-card__details">
+              <span class="service-card__duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                120 min
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="services__footer reveal">
+        <p class="services__note">
+          Todos los precios están en MXN. Consulta de estilo incluida sin costo adicional.
+        </p>
+        <a href="#reservar" class="btn btn--primary">
+          <span>Reservar Ahora</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       GALLERY / GALERÍA — Photo Grid with Hover Overlays
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="gallery" id="galeria">
+    <div class="container container--wide">
+      <div class="gallery__header">
+        <div class="section-label reveal">
+          <span class="section-label__number">03</span>
+          <span class="section-label__line"></span>
+          <span class="section-label__text">Galería</span>
+        </div>
+        <h2 class="gallery__title reveal">
+          Nuestro<br><em>Portafolio</em>
+        </h2>
+      </div>
+
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--tall reveal" data-delay="0">
+          <div class="placeholder-img placeholder-img--dark"><span>Corte Fade</span></div>
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-cat">Cortes</span>
+            <h3 class="gallery__overlay-title">Fade Perfecto</h3>
+          </div>
+        </div>
+
+        <div class="gallery__item reveal" data-delay="100">
+          <div class="placeholder-img placeholder-img--warm"><span>Barba Esculpida</span></div>
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-cat">Barbas</span>
+            <h3 class="gallery__overlay-title">Diseño Artístico</h3>
+          </div>
+        </div>
+
+        <div class="gallery__item reveal" data-delay="200">
+          <div class="placeholder-img placeholder-img--accent"><span>Interior Acapulco</span></div>
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-cat">Ubicaciones</span>
+            <h3 class="gallery__overlay-title">Acapulco Studio</h3>
+          </div>
+        </div>
+
+        <div class="gallery__item gallery__item--wide reveal" data-delay="100">
+          <div class="placeholder-img placeholder-img--dark"><span>Productos Premium</span></div>
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-cat">Productos</span>
+            <h3 class="gallery__overlay-title">Línea Exclusiva</h3>
+          </div>
+        </div>
+
+        <div class="gallery__item reveal" data-delay="200">
+          <div class="placeholder-img placeholder-img--warm"><span>Color & Mechas</span></div>
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-cat">Color</span>
+            <h3 class="gallery__overlay-title">Transformaciones</h3>
+          </div>
+        </div>
+
+        <div class="gallery__item gallery__item--tall reveal" data-delay="0">
+          <div class="placeholder-img placeholder-img--accent"><span>Interior CDMX</span></div>
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-cat">Ubicaciones</span>
+            <h3 class="gallery__overlay-title">Polanco Studio</h3>
+          </div>
+        </div>
+
+        <div class="gallery__item reveal" data-delay="100">
+          <div class="placeholder-img placeholder-img--dark"><span>Afeitado Clásico</span></div>
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-cat">Servicios</span>
+            <h3 class="gallery__overlay-title">Ritual de Afeitado</h3>
+          </div>
+        </div>
+
+        <div class="gallery__item reveal" data-delay="200">
+          <div class="placeholder-img placeholder-img--warm"><span>Experiencia</span></div>
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-cat">Experiencia</span>
+            <h3 class="gallery__overlay-title">Momento Premium</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       TEAM / EQUIPO
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="team" id="equipo">
+    <div class="container">
+      <div class="team__header">
+        <div class="section-label reveal">
+          <span class="section-label__number">04</span>
+          <span class="section-label__line"></span>
+          <span class="section-label__text">Equipo</span>
+        </div>
+        <h2 class="team__title reveal">
+          Los Artistas<br><em>Detrás del Arte</em>
+        </h2>
+        <p class="team__intro reveal">
+          Cada miembro de nuestro equipo ha sido seleccionado no solo por su
+          habilidad técnica, sino por su pasión por hacer sentir extraordinario
+          a cada cliente.
         </p>
       </div>
+
+      <div class="team__grid">
+        <!-- Team Member 1: Arturo -->
+        <article class="team-card reveal" data-delay="0">
+          <div class="team-card__image">
+            <div class="placeholder-img placeholder-img--dark placeholder-img--portrait">
+              <span>Arturo<br>Juárez</span>
+            </div>
+            <div class="team-card__overlay">
+              <div class="team-card__social">
+                <a href="#" aria-label="Instagram de Arturo">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Arturo Juárez</h3>
+            <p class="team-card__role">Fundador &amp; Estilista Principal</p>
+            <p class="team-card__bio">
+              Con más de 15 años de experiencia internacional, Arturo ha
+              definido el estándar de la barbería premium en México.
+            </p>
+          </div>
+        </article>
+
+        <!-- Team Member 2: Carlos -->
+        <article class="team-card reveal" data-delay="150">
+          <div class="team-card__image">
+            <div class="placeholder-img placeholder-img--warm placeholder-img--portrait">
+              <span>Carlos<br>Mendoza</span>
+            </div>
+            <div class="team-card__overlay">
+              <div class="team-card__social">
+                <a href="#" aria-label="Instagram de Carlos">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Carlos Mendoza</h3>
+            <p class="team-card__role">Barbero Senior</p>
+            <p class="team-card__bio">
+              Especialista en fades y cortes de precisión. Sus manos son
+              instrumentos de arte con más de 10,000 cortes en su carrera.
+            </p>
+          </div>
+        </article>
+
+        <!-- Team Member 3: Ana Lucía -->
+        <article class="team-card reveal" data-delay="300">
+          <div class="team-card__image">
+            <div class="placeholder-img placeholder-img--accent placeholder-img--portrait">
+              <span>Ana Lucía<br>Ríos</span>
+            </div>
+            <div class="team-card__overlay">
+              <div class="team-card__social">
+                <a href="#" aria-label="Instagram de Ana Lucía">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Ana Lucía Ríos</h3>
+            <p class="team-card__role">Colorista</p>
+            <p class="team-card__bio">
+              Certificada en Balayage y técnicas de color avanzadas. Transforma
+              tu look con sutileza y maestría.
+            </p>
+          </div>
+        </article>
+
+        <!-- Team Member 4: Diego -->
+        <article class="team-card reveal" data-delay="450">
+          <div class="team-card__image">
+            <div class="placeholder-img placeholder-img--dark placeholder-img--portrait">
+              <span>Diego<br>Vargas</span>
+            </div>
+            <div class="team-card__overlay">
+              <div class="team-card__social">
+                <a href="#" aria-label="Instagram de Diego">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Diego Vargas</h3>
+            <p class="team-card__role">Barbero</p>
+            <p class="team-card__bio">
+              La nueva generación del estilo. Joven, creativo y con un ojo
+              extraordinario para las tendencias actuales.
+            </p>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- ====== QUICK LINKS ====== -->
-  <section class="section-padding">
+  <!-- ═══════════════════════════════════════════════════════════════
+       PRODUCTS / PRODUCTOS
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="products" id="productos">
     <div class="container">
-      <div class="quick-links">
-        <a href="sucursales.html" class="quick-link-card reveal">
-          <span class="quick-link-icon">📍</span>
-          <h3>Sucursales</h3>
-          <p>Acapulco y CDMX — dos destinos, un mismo estándar de excelencia.</p>
-        </a>
-        <a href="#servicios" class="quick-link-card reveal">
-          <span class="quick-link-icon">✂️</span>
-          <h3>Servicios</h3>
-          <p>Cortes clásicos, afeitados con navaja, tratamientos capilares y más.</p>
-        </a>
-        <a href="calendario.html" class="quick-link-card reveal">
-          <span class="quick-link-icon">📅</span>
-          <h3>Agenda tu Cita</h3>
-          <p>Reserva tu horario y asegura tu lugar. Sin esperas, sin sorpresas.</p>
-        </a>
-        <a href="#contacto" class="quick-link-card reveal">
-          <span class="quick-link-icon">📞</span>
-          <h3>Contacto</h3>
-          <p>¿Preguntas? Estamos a una llamada o mensaje de distancia.</p>
-        </a>
+      <div class="products__header">
+        <div class="section-label reveal">
+          <span class="section-label__number">05</span>
+          <span class="section-label__line"></span>
+          <span class="section-label__text">Productos</span>
+        </div>
+        <h2 class="products__title reveal">
+          Productos<br><em>Seleccionados</em>
+        </h2>
+        <p class="products__intro reveal">
+          Usamos y vendemos solo los mejores productos del mundo. Cada uno
+          seleccionado personalmente por Arturo.
+        </p>
+      </div>
+
+      <div class="products__grid">
+        <article class="product-card reveal" data-delay="0">
+          <div class="product-card__image">
+            <div class="placeholder-img placeholder-img--warm"><span>Pomada<br>Premium</span></div>
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__tag">Styling</span>
+            <h3 class="product-card__name">Pomada de Arcilla Mate</h3>
+            <p class="product-card__desc">Fijación fuerte, acabado mate natural. Para el look sin esfuerzo que requiere mucho esfuerzo.</p>
+            <span class="product-card__price">$380 MXN</span>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-delay="150">
+          <div class="product-card__image">
+            <div class="placeholder-img placeholder-img--dark"><span>Aceite<br>de Barba</span></div>
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__tag">Barba</span>
+            <h3 class="product-card__name">Aceite de Barba Artesanal</h3>
+            <p class="product-card__desc">Blend exclusivo de argán, jojoba y cedro. Tu barba nunca se había sentido tan bien.</p>
+            <span class="product-card__price">$450 MXN</span>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-delay="300">
+          <div class="product-card__image">
+            <div class="placeholder-img placeholder-img--accent"><span>Shampoo<br>Premium</span></div>
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__tag">Cuidado</span>
+            <h3 class="product-card__name">Shampoo Fortalecedor</h3>
+            <p class="product-card__desc">Con biotina y keratina. Limpia sin agredir, fortalece sin pesar. Cabello digno de portada.</p>
+            <span class="product-card__price">$320 MXN</span>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-delay="450">
+          <div class="product-card__image">
+            <div class="placeholder-img placeholder-img--warm"><span>After<br>Shave</span></div>
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__tag">Post-Afeitado</span>
+            <h3 class="product-card__name">Bálsamo Post-Afeitado</h3>
+            <p class="product-card__desc">Aloe vera y menta. Calma, hidrata y deja esa sensación de recién barbereado todo el día.</p>
+            <span class="product-card__price">$290 MXN</span>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ====== SERVICES ====== -->
-  <section class="services section-padding" id="servicios">
-    <div class="container text-center">
-      <div class="divider">
-        <span class="divider-icon">◆ ✂ ◆</span>
-      </div>
-      <h2 class="section-title reveal">Menú de Servicios</h2>
-      <p class="section-subtitle reveal">Cada servicio incluye una experiencia premium</p>
-    </div>
+  <!-- ═══════════════════════════════════════════════════════════════
+       BOOKING / RESERVAR
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="booking" id="reservar">
     <div class="container">
-      <div class="services-grid reveal">
-        <div class="service-item service-featured">
-          <div class="service-header">
-            <span class="service-name">Corte Clásico</span>
-            <span class="service-dots"></span>
-            <span class="service-price">$350 MXN</span>
+      <div class="booking__inner">
+        <div class="booking__content">
+          <div class="section-label reveal">
+            <span class="section-label__number">06</span>
+            <span class="section-label__line"></span>
+            <span class="section-label__text">Reservar</span>
           </div>
-          <p class="service-desc">Relájate mientras uno de nuestros estilistas expertos te da el corte perfecto. Incluye lavado y masaje de hombros.</p>
-        </div>
-
-        <div class="service-item">
-          <div class="service-header">
-            <span class="service-name">Corte + Barba</span>
-            <span class="service-dots"></span>
-            <span class="service-price">$500 MXN</span>
+          <h2 class="booking__title reveal">
+            Tu Próxima<br><em>Transformación</em><br>Te Espera
+          </h2>
+          <p class="booking__text reveal">
+            Reserva tu cita en línea y elige al estilista, servicio y horario
+            que mejor te convenga. También puedes llamarnos directamente.
+          </p>
+          <div class="booking__contact reveal">
+            <div class="booking__phone">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <span class="booking__phone-location">Acapulco</span>
+                <a href="tel:+527441234567">+52 744 123 4567</a>
+              </div>
+            </div>
+            <div class="booking__phone">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <span class="booking__phone-location">CDMX</span>
+                <a href="tel:+525512345678">+52 55 1234 5678</a>
+              </div>
+            </div>
           </div>
-          <p class="service-desc">El combo ideal. Corte de cabello y perfilado de barba para un look completo e impecable.</p>
         </div>
 
-        <div class="service-item service-featured">
-          <div class="service-header">
-            <span class="service-name">Afeitado Clásico</span>
-            <span class="service-dots"></span>
-            <span class="service-price">$400 MXN</span>
+        <!-- Booking Widget Placeholder -->
+        <div class="booking__widget reveal">
+          <div class="booking__widget-frame">
+            <div class="booking__widget-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><rect x="7" y="13" width="3" height="3" rx="0.5"/><rect x="14" y="13" width="3" height="3" rx="0.5"/><rect x="7" y="17" width="3" height="3" rx="0.5"/></svg>
+              <p>Sistema de Reservas</p>
+              <span>Selecciona servicio, estilista y horario</span>
+              <!-- Replace with actual booking iframe:
+              <iframe src="https://app.boulevard.io/arturojuarez" width="100%" height="600" frameborder="0"></iframe>
+              -->
+              <a href="#" class="btn btn--primary btn--sm" style="margin-top: 1.5rem;">
+                Abrir Calendario
+              </a>
+            </div>
           </div>
-          <p class="service-desc">Como lo hacía tu abuelo. Navaja recta, toalla caliente, y una atención al detalle impecable.</p>
-        </div>
-
-        <div class="service-item">
-          <div class="service-header">
-            <span class="service-name">Recorte de Barba</span>
-            <span class="service-dots"></span>
-            <span class="service-price">$250 MXN</span>
-          </div>
-          <p class="service-desc">Perfilado y recorte preciso para mantener tu barba siempre en su mejor momento.</p>
-        </div>
-
-        <div class="service-item">
-          <div class="service-header">
-            <span class="service-name">Fade / Degradado</span>
-            <span class="service-dots"></span>
-            <span class="service-price">$400 MXN</span>
-          </div>
-          <p class="service-desc">Transiciones suaves y precisas. El degradado perfecto que define tu estilo.</p>
-        </div>
-
-        <div class="service-item">
-          <div class="service-header">
-            <span class="service-name">Corte Infantil</span>
-            <span class="service-dots"></span>
-            <span class="service-price">$250 MXN</span>
-          </div>
-          <p class="service-desc">Para los pequeños caballeros. Un corte a su medida en un ambiente amigable.</p>
-        </div>
-
-        <div class="service-item">
-          <div class="service-header">
-            <span class="service-name">Tratamiento Capilar</span>
-            <span class="service-dots"></span>
-            <span class="service-price">$600 MXN</span>
-          </div>
-          <p class="service-desc">Nutrición profunda y revitalización para un cabello saludable y con vida.</p>
-        </div>
-
-        <div class="service-item">
-          <div class="service-header">
-            <span class="service-name">Tinte / Grey Blending</span>
-            <span class="service-dots"></span>
-            <span class="service-price">$550 MXN</span>
-          </div>
-          <p class="service-desc">Disimula las canas con naturalidad o atrévete a un cambio de color completo.</p>
-        </div>
-
-        <div class="service-item">
-          <div class="service-header">
-            <span class="service-name">Cera de Cejas</span>
-            <span class="service-dots"></span>
-            <span class="service-price">$150 MXN</span>
-          </div>
-          <p class="service-desc">Cejas definidas y limpias. El toque final para un rostro impecable.</p>
-        </div>
-
-        <div class="service-item service-featured">
-          <div class="service-header">
-            <span class="service-name">Paquete VIP</span>
-            <span class="service-dots"></span>
-            <span class="service-price">$900 MXN</span>
-          </div>
-          <p class="service-desc">La experiencia completa: Corte + Barba + Facial. Incluye bebida de cortesía y masaje de hombros extendido. El lujo que mereces.</p>
-        </div>
-      </div>
-
-      <div class="text-center" style="margin-top: 3rem;">
-        <a href="calendario.html" class="btn btn-primary reveal">Agendar Mi Cita</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== AWARDS ====== -->
-  <section class="awards section-padding" id="equipo">
-    <div class="container text-center">
-      <div class="divider">
-        <span class="divider-icon">◆ ★ ◆</span>
-      </div>
-      <h2 class="section-title reveal">Reconocimientos</h2>
-      <p class="section-subtitle reveal">Excelencia reconocida</p>
-
-      <div class="awards-grid reveal">
-        <div class="award-card">
-          <div class="award-icon">🏆</div>
-          <h4>Mejor Barbería</h4>
-          <p>Acapulco 2023 — Reconocimiento por la Asociación de Estilistas de Guerrero</p>
-        </div>
-        <div class="award-card">
-          <div class="award-icon">⭐</div>
-          <h4>+5,000 Clientes</h4>
-          <p>Más de cinco mil caballeros confían en nuestras manos cada año</p>
-        </div>
-        <div class="award-card">
-          <div class="award-icon">✂️</div>
-          <h4>15+ Años</h4>
-          <p>Más de una década y media perfeccionando el arte del corte masculino</p>
-        </div>
-        <div class="award-card">
-          <div class="award-icon">📸</div>
-          <h4>Featured</h4>
-          <p>Publicado en GQ México, Esquire Latam, y Barbería Moderna</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== CTA BANNER ====== -->
-  <section class="cta-banner">
+  <!-- ═══════════════════════════════════════════════════════════════
+       LOCATIONS / UBICACIONES
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="locations" id="ubicaciones">
     <div class="container">
-      <h2>¿Listo Para el Mejor Corte de Tu Vida?</h2>
-      <p>Agenda tu cita hoy y descubre por qué somos la barbería preferida de Acapulco y CDMX.</p>
-      <a href="calendario.html" class="btn">Agendar Cita</a>
+      <div class="locations__header">
+        <div class="section-label reveal">
+          <span class="section-label__number">07</span>
+          <span class="section-label__line"></span>
+          <span class="section-label__text">Ubicaciones</span>
+        </div>
+        <h2 class="locations__title reveal">
+          Encuéntranos en<br><em>Dos Ciudades</em>
+        </h2>
+      </div>
+
+      <div class="locations__grid">
+        <!-- Acapulco -->
+        <article class="location-card reveal" data-delay="0">
+          <div class="location-card__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.1!2d-99.87!3d16.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDUxJzAwLjAiTiA5OcKwNTInMTIuMCJX!5e0!3m2!1ses!2smx!4v1234567890"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación Acapulco"
+            ></iframe>
+          </div>
+          <div class="location-card__content">
+            <div class="location-card__badge">Flagship</div>
+            <h3 class="location-card__name">Acapulco</h3>
+            <address class="location-card__address">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Costera Miguel Alemán 123<br>
+              Col. Costa Azul, C.P. 39850<br>
+              Acapulco, Guerrero
+            </address>
+            <div class="location-card__details">
+              <div class="location-card__detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+527441234567">+52 744 123 4567</a>
+              </div>
+              <div class="location-card__detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <span>Lun — Sáb: 9:00 — 20:00</span>
+              </div>
+              <div class="location-card__detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <span>Dom: 10:00 — 15:00</span>
+              </div>
+            </div>
+            <a href="https://maps.google.com/?q=Costera+Miguel+Aleman+123+Acapulco" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+              <span>Cómo Llegar</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- CDMX -->
+        <article class="location-card reveal" data-delay="200">
+          <div class="location-card__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.5!2d-99.19!3d19.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzQ4LjAiTiA5OcKwMTEnMjQuMCJX!5e0!3m2!1ses!2smx!4v1234567890"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación CDMX"
+            ></iframe>
+          </div>
+          <div class="location-card__content">
+            <div class="location-card__badge location-card__badge--new">Nuevo</div>
+            <h3 class="location-card__name">Ciudad de México</h3>
+            <address class="location-card__address">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Av. Presidente Masaryk 456<br>
+              Polanco, C.P. 11560<br>
+              Ciudad de México, CDMX
+            </address>
+            <div class="location-card__details">
+              <div class="location-card__detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+525512345678">+52 55 1234 5678</a>
+              </div>
+              <div class="location-card__detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <span>Lun — Sáb: 10:00 — 21:00</span>
+              </div>
+              <div class="location-card__detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <span>Dom: 11:00 — 16:00</span>
+              </div>
+            </div>
+            <a href="https://maps.google.com/?q=Av+Presidente+Masaryk+456+Polanco+CDMX" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+              <span>Cómo Llegar</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- ====== FOOTER ====== -->
-  <footer class="footer" id="contacto">
+  <!-- ═══════════════════════════════════════════════════════════════
+       TESTIMONIALS / TESTIMONIOS
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="testimonials" id="testimonios">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3>Arturo Juárez</h3>
-          <p class="tagline">Donde el Estilo se Convierte en Arte</p>
-          <p>Barbería premium con más de 15 años de tradición. Dos sucursales, un mismo compromiso con la excelencia.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="Facebook">📘</a>
-            <a href="#" aria-label="WhatsApp">💬</a>
-            <a href="#" aria-label="TikTok">🎵</a>
+      <div class="testimonials__header">
+        <div class="section-label reveal">
+          <span class="section-label__number">08</span>
+          <span class="section-label__line"></span>
+          <span class="section-label__text">Testimonios</span>
+        </div>
+        <h2 class="testimonials__title reveal">
+          Lo que Dicen<br><em>Nuestros Clientes</em>
+        </h2>
+      </div>
+
+      <div class="testimonials__slider" id="testimonialSlider">
+        <div class="testimonials__track">
+          <blockquote class="testimonial reveal">
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__text">
+              "No es solo un corte de pelo. Es una experiencia completa. Desde que
+              entras, el ambiente, la atención, los detalles… todo es de primer nivel.
+              Arturo y su equipo son verdaderos artistas."
+            </p>
+            <footer class="testimonial__author">
+              <div class="testimonial__author-avatar">
+                <div class="placeholder-img placeholder-img--dark placeholder-img--circle"><span>RM</span></div>
+              </div>
+              <div>
+                <cite class="testimonial__author-name">Ricardo Martínez</cite>
+                <span class="testimonial__author-role">CEO, Martínez Capital</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial reveal">
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__text">
+              "Llevo 3 años viniendo y nunca he salido decepcionado. Carlos es un
+              mago con las tijeras. Mi barba nunca se había visto tan bien. Vale cada
+              peso."
+            </p>
+            <footer class="testimonial__author">
+              <div class="testimonial__author-avatar">
+                <div class="placeholder-img placeholder-img--warm placeholder-img--circle"><span>JL</span></div>
+              </div>
+              <div>
+                <cite class="testimonial__author-name">Javier López</cite>
+                <span class="testimonial__author-role">Arquitecto</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial reveal">
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__text">
+              "Ana Lucía hizo magia con mi color. Las mechas quedaron exactamente
+              como las imaginé. El resultado fue tan natural que todos preguntan dónde
+              me lo hice. ¡100% recomendado!"
+            </p>
+            <footer class="testimonial__author">
+              <div class="testimonial__author-avatar">
+                <div class="placeholder-img placeholder-img--accent placeholder-img--circle"><span>SC</span></div>
+              </div>
+              <div>
+                <cite class="testimonial__author-name">Sofía Castro</cite>
+                <span class="testimonial__author-role">Influencer de Moda</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+
+        <div class="testimonials__controls">
+          <button class="testimonials__btn testimonials__btn--prev" id="testimonialPrev" aria-label="Anterior">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          </button>
+          <div class="testimonials__dots" id="testimonialDots"></div>
+          <button class="testimonials__btn testimonials__btn--next" id="testimonialNext" aria-label="Siguiente">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       INSTAGRAM FEED (Placeholder)
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="instagram" id="instagram">
+    <div class="container container--wide">
+      <div class="instagram__header">
+        <h2 class="instagram__title reveal">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          @arturojuarezestilista
+        </h2>
+        <a href="https://instagram.com/arturojuarezestilista" target="_blank" rel="noopener" class="btn btn--outline btn--sm reveal">
+          Seguir en Instagram
+        </a>
+      </div>
+      <div class="instagram__grid">
+        <div class="instagram__item reveal" data-delay="0">
+          <div class="placeholder-img placeholder-img--dark"><span>Post 1</span></div>
+        </div>
+        <div class="instagram__item reveal" data-delay="50">
+          <div class="placeholder-img placeholder-img--warm"><span>Post 2</span></div>
+        </div>
+        <div class="instagram__item reveal" data-delay="100">
+          <div class="placeholder-img placeholder-img--accent"><span>Post 3</span></div>
+        </div>
+        <div class="instagram__item reveal" data-delay="150">
+          <div class="placeholder-img placeholder-img--dark"><span>Post 4</span></div>
+        </div>
+        <div class="instagram__item reveal" data-delay="200">
+          <div class="placeholder-img placeholder-img--warm"><span>Post 5</span></div>
+        </div>
+        <div class="instagram__item reveal" data-delay="250">
+          <div class="placeholder-img placeholder-img--accent"><span>Post 6</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <!-- Footer Top -->
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#hero" class="footer__logo">
+            <span class="footer__logo-mark">AJ</span>
+            <span class="footer__logo-text">Arturo Juárez<br><small>Estilista</small></span>
+          </a>
+          <p class="footer__tagline">Donde el Estilo se Convierte en Arte</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/arturojuarezestilista" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-link">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://facebook.com/arturojuarezestilista" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social-link">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://tiktok.com/@arturojuarezestilista" target="_blank" rel="noopener" aria-label="TikTok" class="footer__social-link">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.57 6.33 6.33 0 0 0 9.37 22a6.33 6.33 0 0 0 6.38-6.22V9.4a8.16 8.16 0 0 0 4.84 1.58V7.55a4.78 4.78 0 0 1-1-.86z"/></svg>
+            </a>
           </div>
         </div>
 
-        <div>
-          <h4>Sucursales</h4>
-          <div class="footer-location">
-            <h5>Acapulco</h5>
-            <p>Av. Costera Miguel Alemán #123<br>Fracc. Costa Azul<br>Acapulco, Guerrero</p>
-            <p style="margin-top: 0.3rem;"><a href="tel:+527441234567">+52 744 123 4567</a></p>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4 class="footer__col-title">Navegación</h4>
+            <ul class="footer__list">
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#equipo">Equipo</a></li>
+              <li><a href="#galeria">Galería</a></li>
+              <li><a href="#productos">Productos</a></li>
+              <li><a href="#reservar">Reservar</a></li>
+            </ul>
           </div>
-          <div class="footer-location">
-            <h5>CDMX</h5>
-            <p>Calle Masaryk #456<br>Col. Polanco<br>Ciudad de México</p>
-            <p style="margin-top: 0.3rem;"><a href="tel:+525512345678">+52 55 1234 5678</a></p>
-          </div>
-        </div>
 
-        <div>
-          <h4>Navegación</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#equipo">Equipo</a></li>
-            <li><a href="sucursales.html">Sucursales</a></li>
-            <li><a href="calendario.html">Agendar Cita</a></li>
-          </ul>
-        </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Acapulco</h4>
+            <ul class="footer__list">
+              <li>Costera Miguel Alemán 123</li>
+              <li>Col. Costa Azul, C.P. 39850</li>
+              <li><a href="tel:+527441234567">+52 744 123 4567</a></li>
+              <li>Lun — Sáb: 9:00 — 20:00</li>
+              <li>Dom: 10:00 — 15:00</li>
+            </ul>
+          </div>
 
-        <div>
-          <h4>Horarios</h4>
-          <div class="footer-location">
-            <p>Lunes a Viernes<br><strong style="color: var(--white);">9:00 AM — 8:00 PM</strong></p>
-          </div>
-          <div class="footer-location">
-            <p>Sábados<br><strong style="color: var(--white);">9:00 AM — 6:00 PM</strong></p>
-          </div>
-          <div class="footer-location">
-            <p>Domingos<br><strong style="color: var(--white);">10:00 AM — 4:00 PM</strong></p>
+          <div class="footer__col">
+            <h4 class="footer__col-title">CDMX</h4>
+            <ul class="footer__list">
+              <li>Av. Presidente Masaryk 456</li>
+              <li>Polanco, C.P. 11560</li>
+              <li><a href="tel:+525512345678">+52 55 1234 5678</a></li>
+              <li>Lun — Sáb: 10:00 — 21:00</li>
+              <li>Dom: 11:00 — 16:00</li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2024 Arturo Juárez — Estilista. Todos los derechos reservados.</p>
-        <p>Hecho con ✂️ y ❤️ en México</p>
+      <!-- Newsletter -->
+      <div class="footer__newsletter">
+        <h4 class="footer__newsletter-title">Únete a la Lista VIP</h4>
+        <p class="footer__newsletter-text">Ofertas exclusivas, tips de estilo y novedades directo a tu inbox.</p>
+        <form class="footer__newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="tu@email.com" required aria-label="Tu email">
+          <button type="submit" class="btn btn--primary btn--sm">Suscribirme</button>
+        </form>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2024 Arturo Juárez Estilista. Todos los derechos reservados.
+        </p>
+        <div class="footer__legal">
+          <a href="#">Aviso de Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       BACK TO TOP BUTTON
+       ═══════════════════════════════════════════════════════════════ -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/527441234567?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- JavaScript -->
   <script src="app.js"></script>
-  <script>
-    // Scroll reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-    reveals.forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>
